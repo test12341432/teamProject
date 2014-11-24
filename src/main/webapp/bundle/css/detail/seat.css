@@ -1,0 +1,60 @@
+/*//////////////////////////////////////////////////*/
+/*//////////last-date/////2014.11.17////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////target/////seat/////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////author/////CJ///////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////publisher/////CJ////////////////////////*/
+/*//////////////////////////////////////////////////*/
+/*//////////copyright/////CodeCake//////////////////*/
+/*//////////////////////////////////////////////////*/
+
+@CHARSET "UTF-8";
+
+#article #section_seat #seat_outline{
+	position:relative;
+	width:800px; height:600px;
+	left:200px; top:100px; 
+	border:1px solid skyblue;
+}
+#article #section_seat #seat_outline #seat_location{
+	position:absolute;
+	width:500px; height:600px;
+	border:1px solid red;
+	
+}
+#article #section_seat #seat_outline #seat_detail_Information{
+	position:absolute; left:500px;
+	width:300px; height:600px;
+	border:1px solid black;
+}
+
+/* left location view box*/
+#article #section_seat #seat_outline #seat_location #seat_lo_box{
+	position:absolute;
+	width:90%; height:90%;
+	left:30px; bottom:30px;	
+	background-color:green;	
+}
+/*STAGE*/
+#article #section_seat #seat_outline #seat_location #seat_lo_box #seat_stage{
+	display:inline-block;
+	width:450px; line-height:30px;
+	background-color:#c0c0c0;
+	text-align:center;
+	font-color:white;
+	
+}
+/* right div infomations */
+#article #section_seat #seat_outline #seat_detail_Information{
+	height:48%;
+	border:3px solid #ff32b1;
+}
+#article #section_seat #seat_outline #seat_detail_Information p{
+	margin-top:10px; margin-left:8px;
+}
+#article #section_seat #seat_outline #info_book{
+	border:1px solid black;
+	margin-top:600px;
+}
