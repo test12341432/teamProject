@@ -14,6 +14,8 @@ public interface ContentsService {
 
 	List<SeatBean> selectSeat(int content_code);
 
+	int remain(int content_code);
+
 
 
 

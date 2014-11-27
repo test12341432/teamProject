@@ -27,5 +27,10 @@ public class ContentsServiceImpl implements ContentsService {
 		return this.contDAO.selSeat(content_code);
 	}
 
+	@Override
+	public int remain(int content_code) {
+		return this.contDAO.remain(content_code);
+	}
+
 
 }

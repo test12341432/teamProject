@@ -27,4 +27,9 @@ public class ContentsDAOImpl implements ContentsDAO {
 		return this.sqlSession.selectList("seat",content_code);
 	}
 
+	@Override
+	public int remain(int content_code) {
+		return this.sqlSession.selectOne("remain",content_code);
+	}
+
 }

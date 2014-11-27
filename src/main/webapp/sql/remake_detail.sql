@@ -25,7 +25,8 @@ create sequence contents_no_seq increment by 1 start with 1 nocache;
 
 /*예약(좌석)정보 테이블 */
 create table book_content(
-fk_code int        -- foreign key로 연결
+fk_code int
+,foreign key(fk_code) references contents(content_code)-- foreign key로 연결
 ,content_date varchar2(500)  --날짜
 ,content_seq int            --회차
 ,select_line int            --선택 열

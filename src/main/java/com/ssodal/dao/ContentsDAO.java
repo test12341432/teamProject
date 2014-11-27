@@ -13,6 +13,8 @@ public interface ContentsDAO {
 
 	List<SeatBean> selSeat(int content_code);//선택 좌석 확인
 
+	int remain(int content_code);
+
 
 
 

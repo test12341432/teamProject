@@ -8,7 +8,7 @@
 				<section id="section_seat">
 					<div id="seat_outline">
 						<div id="seat_location">
-							<div id="seat_lo_box">
+							<div id="seat_lo_box" style="overflow:auto">
 								<div id="seat_stage">
 									<h3>STAGE</h3>
 								</div>
@@ -16,10 +16,10 @@
 								<c:forEach begin="1" end="${m.content_maxline}" step="1" var="line">
 									<br/>
 									<c:forEach var="row" begin="1" end="${m.content_maxrow}" step="1">
-									<input type="checkbox" value="${line}${row}" <c:forEach var="a" items="${s}">
-									<c:if test="${a.select_line == line && a.select_row == row}">checked="checked"</c:if>
-								</c:forEach> /> 
-									</c:forEach>
+										<input type="checkbox" id="${line}열${row}석" value="${line}열${row}석" onclick="select_seat(this);"<c:forEach var="a" items="${s}">
+									<c:if test="${a.select_line == line && a.select_row == row}">disabled</c:if>
+								</c:forEach> />${line}열${row}석
+								</c:forEach>
 								</c:forEach>
 							</div>
 						</div>
@@ -36,16 +36,20 @@
 								
 							</div>
 							<div id="info_book">
-							<table>
-									<tr>
-										<th>예약된 좌석</th>
-									</tr>
-									<c:forEach var="a" items="${s}">
-										<tr>
-											<td>${a.select_line}열${a.select_row}석</td>
-										</tr>
-									</c:forEach>
-								</table>
+							<ul>
+								<li>총 좌석 : ${total}</li>
+								<li>잔여좌석 : ${remain}</li>
+							</ul>
+							<span>인원수 선택</span>
+							<select id="person">
+								<option value="1">1명</option>
+								<option value="2">2명</option>
+								<option value="3">3명</option>
+								<option value="4">4명</option>
+							</select>
+								<div id="seat_val">
+								</div>
+								<input type="button" value="예매하기" id="seat_ok" name="sear_ok"/>
 							</div>
 						</div>
 					</div>

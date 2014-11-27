@@ -12,4 +12,8 @@
 	<select id="seat" parameterType="int" resultType="sbean">
 		select * from book_content where fk_code=#{content_code}
 	</select>
+	<!-- 잔여좌석 개수 -->
+	<select id="remain" parameterType="int" resultType="int">
+		select count(fk_code) from book_content where fk_code like #{content_code}
+	</select>
 </mapper>

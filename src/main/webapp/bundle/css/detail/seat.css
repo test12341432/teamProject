@@ -48,13 +48,15 @@
 }
 /* right div infomations */
 #article #section_seat #seat_outline #seat_detail_Information{
-	height:48%;
+	height:298px;
 	border:3px solid #ff32b1;
 }
 #article #section_seat #seat_outline #seat_detail_Information p{
 	margin-top:10px; margin-left:8px;
 }
 #article #section_seat #seat_outline #info_book{
+	position:absolute;
 	border:1px solid black;
-	margin-top:600px;
+	height:298px; width:100%;
+	top:300px;
 }
